@@ -55,12 +55,13 @@ while True:
                     pass
                 else:
                     break
-                    input('press any key to continue..')
-                    os.system('clear')    
+                input('press any key to continue..')
+                os.system('clear')    
             except ValueError: 
                 os.system('clear') 
                 continue
     else:
         print('you have choosen: {0}'.format(oneAns))
+        print('test')
         input()
         os.system('clear')
