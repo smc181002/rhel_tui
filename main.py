@@ -1,4 +1,6 @@
 import os
+from containers import *
+
 from time import sleep
 # import sys
 def title():    
@@ -22,25 +24,6 @@ def menuOne():
     [5] Miscellaneous
     [0] exit\n'''))
     
-def containerOption():
-    return int(input(''' choose from these options (Container Operations):
-    [1] check running containers
-    [2] create container
-    [3] start container
-    [4] stop container
-    [4] create a volume
-    [5] create a network
-    [6] save a container
-    [0] back\n'''))
-    
-def container(opt):
-    if opt == 1:
-        os.system('docker ps')
-    elif opt == 0:
-        return 0
-    else:
-        print('you have choosen {0}'.format(opt)) 
-    return 1
 
 while True:
     title()
